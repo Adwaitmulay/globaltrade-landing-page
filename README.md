@@ -27,5 +27,11 @@ https://adwaitmulay.github.io/globaltrade-landing/
 - CSS3 (Flexbox, Grid, Media Queries)
 - Vanilla JavaScript
 
+## Screenshots
+![Hero Section](screenshot1.png)
+![Services](screenshot2.png)
+![Contact Form](screenshot3.png)
+
+
 ## Author
 Adwait Mulay — github.com/Adwaitmulay
