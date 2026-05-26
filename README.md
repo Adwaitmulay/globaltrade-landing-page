@@ -15,7 +15,7 @@ A modern, responsive landing page for a startup built using HTML, CSS, and JavaS
 - Fully mobile responsive using media queries
 - Smooth scroll navigation
 - Navbar hamburger toggle for mobile
-- Scroll animations using IntersectionObserver
+- Scroll animations using Intersection Observer
 - Contact form with JS validation
 
 
@@ -23,9 +23,9 @@ A modern, responsive landing page for a startup built using HTML, CSS, and JavaS
 https://adwaitmulay.github.io/globaltrade-landing/
 
 ## Built With
-- HTML5 (semantic tags)
-- CSS3 (Flexbox, Grid, Media Queries)
-- Vanilla JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ## Screenshots
 ![Hero Section](screenshot1.png)
