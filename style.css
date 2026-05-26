@@ -1,0 +1,433 @@
+/* =============================================
+   GLOBAL STYLES
+   * means apply to everything
+============================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* reusable button style */
+.btn-primary {
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #d4920a;
+}
+
+/* section sub heading */
+.section-sub {
+  color: #777;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/* =============================================
+   NAVBAR
+============================================= */
+
+header {
+  position: fixed;         /* sticks to top when scrolling */
+  top: 0;
+  width: 100%;
+  z-index: 1000;           /* stays above everything */
+  background-color: #0a1628;
+}
+
+.navbar {
+  display: flex;           /* flexbox puts items in a row */
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f0a500;
+  letter-spacing: 1px;
+}
+
+/* nav links list */
+.nav-links {
+  list-style: none;        /* removes bullet points */
+  display: flex;
+  gap: 32px;               /* space between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+/* hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* =============================================
+   HERO SECTION
+============================================= */
+
+.hero {
+  background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+  min-height: 100vh;       /* takes full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #aac4e0;
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+/* =============================================
+   SERVICES SECTION
+============================================= */
+
+.services {
+  padding: 90px 60px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #0a1628;
+}
+
+/* CSS Grid — 3 equal columns */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 36px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);   /* lifts card up on hover */
+}
+
+.card-icon {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0a1628;
+}
+
+.card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =============================================
+   ABOUT SECTION
+============================================= */
+
+.about {
+  padding: 90px 60px;
+  background-color: white;
+}
+
+.about-content {
+  display: flex;             /* side by side layout */
+  gap: 60px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  color: #0a1628;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+/* stats boxes */
+.about-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 200px;
+}
+
+.stat {
+  background: #0a1628;
+  color: white;
+  padding: 24px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 32px;
+  color: #f0a500;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #aac4e0;
+  margin-top: 4px;
+}
+
+/* =============================================
+   TESTIMONIALS SECTION
+============================================= */
+
+.testimonials {
+  padding: 90px 60px;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #0a1628;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  text-align: left;
+}
+
+.testimonial-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.client-name {
+  font-weight: 600;
+  color: #0a1628;
+  font-size: 14px;
+}
+
+/* =============================================
+   CONTACT SECTION
+============================================= */
+
+.contact {
+  padding: 90px 60px;
+  text-align: center;
+  background: white;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #0a1628;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f0a500;
+}
+
+#form-msg {
+  color: green;
+  font-size: 14px;
+}
+
+/* =============================================
+   FOOTER
+============================================= */
+
+footer {
+  background-color: #0a1628;
+  color: #aac4e0;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #aac4e0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f0a500;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #556;
+}
+
+/* =============================================
+   MEDIA QUERIES — MOBILE RESPONSIVE
+   When screen is smaller than 768px
+============================================= */
+
+@media (max-width: 768px) {
+
+  /* hide nav links, show hamburger */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0a1628;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  /* when hamburger is clicked, JS adds this class */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    padding: 18px 24px;
+  }
+
+  /* hero text smaller on mobile */
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  /* 1 column on mobile instead of 3 */
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* stack about section vertically */
+  .about-content {
+    flex-direction: column;
+  }
+
+  .services,
+  .about,
+  .testimonials,
+  .contact {
+    padding: 60px 24px;
+  }
+}
