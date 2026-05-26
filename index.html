@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlobalTrade — Import Export Solutions</title>
+
+  <!-- linking our CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header>
+    <nav class="navbar">
+
+      <!-- logo -->
+      <div class="logo">🌍 GlobalTrade</div>
+
+      <!-- navigation links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- hamburger button for mobile -->
+      <button class="hamburger" id="hamburger">☰</button>
+
+    </nav>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Your Trusted Global Trade Partner</h1>
+      <p>We connect businesses across the world with fast, reliable, and affordable import-export solutions.</p>
+      <button class="btn-primary">Get a Free Quote</button>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES / FEATURES SECTION ========== -->
+  <section class="services" id="services">
+
+    <h2>What We Offer</h2>
+    <p class="section-sub">Everything you need to trade globally</p>
+
+    <!-- 3 feature cards using CSS Grid -->
+    <div class="cards-grid">
+
+      <div class="card">
+        <div class="card-icon">🚢</div>
+        <h3>Sea Freight</h3>
+        <p>Affordable bulk shipping across all major ocean routes worldwide.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">✈️</div>
+        <h3>Air Freight</h3>
+        <p>Fast and secure air cargo delivery for time-sensitive shipments.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📦</div>
+        <h3>Customs Clearance</h3>
+        <p>We handle all documentation and customs formalities on your behalf.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About GlobalTrade</h2>
+        <p>Founded in 2015, GlobalTrade has helped over 500 businesses expand internationally. We operate in 40+ countries and have a team of 200+ trade experts ready to assist you.</p>
+        <p>Our mission is simple — make global trade accessible for every business, big or small.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <h3>500+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+          <h3>40+</h3>
+          <p>Countries</p>
+        </div>
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS SECTION ========== -->
+  <section class="testimonials" id="testimonials">
+
+    <h2>What Our Clients Say</h2>
+    <p class="section-sub">Trusted by businesses across the globe</p>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <p>"GlobalTrade helped us import machinery from Germany in just 2 weeks. Excellent service!"</p>
+        <div class="client-name">— Rajesh Kumar, Mumbai</div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Their customs team saved us from a major compliance issue. Highly recommend their services."</p>
+        <div class="client-name">— Sarah Williams, London</div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Best rates for sea freight to USA. We have been using them for 3 years now."</p>
+        <div class="client-name">— Amit Shah, Ahmedabad</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact" id="contact">
+    <h2>Get In Touch</h2>
+    <p class="section-sub">We will get back to you within 24 hours</p>
+
+    <div class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" />
+      <input type="email" id="email" placeholder="Your Email" />
+      <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+      <button class="btn-primary" onclick="submitForm()">Send Message</button>
+      <p id="form-msg"></p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">🌍 GlobalTrade</div>
+      <p>Connecting businesses across the world since 2015.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">© 2025 GlobalTrade. Built by Adwait Mulay.</p>
+    </div>
+  </footer>
+
+  <!-- linking our JS file — always at bottom of body -->
+  <script src="script.js"></script>
+
+</body>
+</html>
