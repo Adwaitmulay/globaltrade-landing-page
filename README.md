@@ -18,9 +18,12 @@ A modern, responsive landing page for a startup built using HTML, CSS, and JavaS
 - Scroll animations using Intersection Observer
 - Contact form with JS validation
 
-
 ## Live Link
 https://adwaitmulay.github.io/globaltrade-landing/
+
+Task 1 README — globaltrade-landing-page:
+## Demo Video
+https://youtu.be/4z8NIcHqkU8
 
 ## Built With
 - HTML
